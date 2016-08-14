@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {1.5.2}Ground truth labeling.}{5}{subsection.1.5.2}
 \contentsline {section}{\numberline {1.6}How we adressed the problem}{6}{section.1.6}
 \contentsline {section}{\numberline {1.7}The ranking metrics.}{6}{section.1.7}
-\contentsline {subsection}{\numberline {1.7.1}Calculating the distances.}{6}{subsection.1.7.1}
+\contentsline {subsection}{\numberline {1.7.1}Computing the distances.}{6}{subsection.1.7.1}
 \contentsline {subsection}{\numberline {1.7.2}The mean average precision.}{6}{subsection.1.7.2}
 \contentsline {subsubsection}{Average precision}{7}{section*.3}
 \contentsline {subsection}{\numberline {1.7.3}The precision at k}{8}{subsection.1.7.3}

@@ -10,6 +10,6 @@
 \BOOKMARK [2][-]{subsection.1.5.2}{Ground truth labeling.}{section.1.5}% 10
 \BOOKMARK [1][-]{section.1.6}{How we adressed the problem}{chapter.1}% 11
 \BOOKMARK [1][-]{section.1.7}{The ranking metrics.}{chapter.1}% 12
-\BOOKMARK [2][-]{subsection.1.7.1}{Calculating the distances.}{section.1.7}% 13
+\BOOKMARK [2][-]{subsection.1.7.1}{Computing the distances.}{section.1.7}% 13
 \BOOKMARK [2][-]{subsection.1.7.2}{The mean average precision.}{section.1.7}% 14
 \BOOKMARK [2][-]{subsection.1.7.3}{The precision at k}{section.1.7}% 15
