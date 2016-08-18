@@ -51,10 +51,13 @@
 
 
 \chapter{Introduction}
-\section{CNSMDP and Project TICEL.}
+
+\ml{add an intro about the use of data mining for music, 2 paragraphs}
+
+\section{CNSMDP and TICEL Project}
 The CNSMDP  (\textit{"Conservatoire National Supérieur de Musique et de Danse de Paris"}) offers a high level training in the domain of music,dance and sound technologies. Placed under the tutelage of the French Ministry of Culture and Communication, the conservatory offers to its 1300 students a cutting edge study programmes. Also, to keep up with the new technologies and help in its advancement, a lot of projects are launched to benefit from the digital advancement in the musical and dance domains. \\
 The project TICEL (\textit{"Traité instrumental collaboratif en ligne"}) falls directly in that perspective. It was launched in collaboration between the CNSMDP, "\textit{'Ecole normale supérieure de Paris}" and \textit{"Ecole centrale de Nantes"}. The project was thus supervised by Dr. Mathieu Lagrange at the laboratory of IRCCYN (\textit{"Institut de Recherche en Communications et Cybernétique de Nantes"}) in the city of Nantes. I was asked as part of my final year project to conduct an internship on the project. \par
-The purpose of the internship is to study the sounds played by different instruments with different playing techniques. The music samples will thus be represented in a space of descriptors that enables the  discrimination between two instruments and their relative playing techniques. This discrimination is done by finding a space where an euclidean distance is maximum for inter-class observations and minimum for intra-class observations. The precision of the space will be evaluated using two ranking metrics : the mean average precision (MAP) and the precision at k (P@k). The study was done on the SOL database that is presented in the next paragraph.  \\ 
+The purpose of the internship is to study the sounds played by different instruments with different playing techniques. The music samples will thus be represented in a space of descriptors that enables the  discrimination between two instruments and their relative playing techniques. This discrimination is done by finding a space where an euclidean distance is maximum for inter-class observations and minimum for intra-class observations. The goodness of fit of the space will be evaluated using two ranking metrics: the mean average precision (MAP) and the precision at k (P@k). The study was done on the SOL database that is presented in the next paragraph.  \\ 
 
 \section{The SOL database.}
 The SOL database is provided as part of the Orchids orchestration system by the team IRCAM. It contains 25119 audio files stored in the 24 bits / 44.1 kHz format. The sounds are played by 16 different instruments which can be subdivided into 32 different classes. There are 498 different combination of instrument with different playing techniques. The database contains three types of instruments varying from strings (Violin, Viola, ...), woodwind (Flute, Oboe...) and Brass (Trumpet, Trombone,...). The techniques of playing on each instruments vary from instrument to another and include techniques such as Aeolian, crescendo, flatterzunge... A full list of instruments and playing techniques is provided in \cite{SOL}.
@@ -70,7 +73,13 @@ Figure 2.1 shows the distribution of the SOL database along 6 octaves and one no
 
 \section{Human interpretation and timber.}
 
-Before we start presenting the work done in this internship it will be interesting to look on how this discrimination is naturally done by human.\par
+\ml{no dots in section}
+
+\ml{always use present time}
+
+\ml{avoids using we as much as possible. Example: we sampled the audio files at -> the audio files are sampled at}
+
+Before we start presenting the work done in this internship it is interesting to look on how this discrimination \ml{between ?} is naturally done by human.\par
 \begin{figure}[t!]
   
   \centering
@@ -78,15 +87,15 @@ Before we start presenting the work done in this internship it will be interesti
     \caption{scheme of the cochlear taken from : http://www.medel.com/uk/show2/index/id/1361/title/Complete-Cochlear-Coverage/}
 \end{figure}
 \subsection{The mechanics of hearing.}
-Our brain processes sounds by analyzing both the frequency components of those signals and the temporal change of amplitude. To better understand this phenomena, the figure 1 shows a scheme of the cochlear inside the ear. We can see on the right part of the picture, that the cochlear contains hair resonating  at different frequencies. Those small hair will trigger a nerve. this nerve will inform the brain on which frequencies is being heard by the ear. The brain will thus have three information to process, the frequencies, their relative loudness and the time they are being heard. Based on those three information the sound will be constructed, and we will be able to   
+Our brain processes sounds by analyzing both the frequency components of those signals and the temporal change of amplitude. To better understand this phenomena, the figure 1 shows a scheme of the cochlea located inside the ear. We can see on the right part of the picture, that the cochlea contains hair resonating  at different frequencies. Those small hair will trigger a nerve. this nerve will inform the brain on which frequencies is being heard by the ear. The brain will thus have three information to process, the frequencies, their relative loudness and the time they are being heard. Based on those three information the sound will be constructed, and we will be able to   
 recognize the loudness, pitch and timbre of the sounds we are hearing. Other perception factors can help in recognizing the spacial coordinates   of that sound.
 
 \subsection{The psychology of hearing.}
 
-In our daily interaction with our environment, what is relevant is not what we perceive but how we interpret it.For example, hearing the sound of a train behind us is directly correlated with fear. Another example more relevant to our study, a french person hearing an arabic song will react to it differently from a native person. To fully understand how we interpret sound, the mechanical factors inside the ear are not enough. Just as all the other senses, a psychological aspect should be taken into account to build the hole picture of our interpretation of reality. This aspect can not be explained with equations, rather it is better understood with experiences or with functional study of the brain. In the last section of our internship we will be dealing with one similar problem of understanding the psychology of interpreting instrument sounds.\par 
+In our daily interaction with our environment, what is relevant \ml{for what ?} is not what we perceive but how we interpret it.For example, hearing the sound of a train behind us is directly correlated with fear. Another example more relevant to our study, a french person hearing an arabic song will react to it differently from a native person. To fully understand how we interpret sound, the mechanical factors inside the ear are not enough. Just as all the other senses, a psychological aspect should be taken into account to build the whole picture of our interpretation of reality. This aspect can not be explained with equations \ml{it may be we don't now yet}, rather it is better understood with experiences or with functional study of the brain. In the last section of our internship we will be dealing with one similar problem of understanding the psychology of interpreting instrument sounds.\par 
 
 
-I will be presenting in this report the study of similarity between different audio recordings coming from same and different instruments with different playing technique, and since timber by its most general definition is what allows us to experience, the same note played with the same loudness, in a different way for each instrument.\\ I will first start by talking about  timbre, then I will present the problem and its proposed solution. 
+I will be presenting in this report the study of similarity between different audio recordings coming from the same or from different instruments with different playing technique, and since timber by its most general definition is what allows us to experience, the same note played with the same loudness, in a different way for each instrument.\\ I will first start by talking about  timbre, then I will present the problem and its proposed solution. 
 
 
 
@@ -113,27 +122,28 @@ In the first section of the project, we studied the complete Sol database by div
 \item classes of instruments with variation(with mute, without mute...).
 \item classes of instruments with different playing techniques.
 \end{enumerate}
-In this part, the labeling is taken from the true nature of the instrument , and no human opinion affects the decision of the labeling. We are thus facing the problem of discriminating between instruments based on the physical aspect of the instruments. It should be noted that the difficulty of the problem increment with the number of classes. For example, twe have more different factors between two instruments than two instruments played in the same technique.\\ The anticipated end result is to find the space where the five nearest neighboors to each sample are from the same class.
+In this part, the labeling is taken from the true \ml{physical ?} nature of the instrument, and no human opinion affects the decision of the labeling. We are thus facing the problem of discriminating between instruments based on the physical aspect of the instruments. It should be noted that the difficulty of the problem increment with the number of classes. For example, we have more different factors \ml{what is a factor ?} between two instruments than two instruments played in the same technique.\\ The anticipated end result is to find the space where the five nearest neighbors to each sample are from the same class.
 
 \subsection{Ground truth labeling.}
-In the second section of the project, a ground truth study was conducted and 32 different subjects gave labeling based on their interpretation of 78 samples taken from the complete database. This time the labeling is affected by the psychological way each person hear the sound. The similarity between two samples is not only based on the true nature of the sound but also on how each subject interpret the sound.\\ What we are searching to achieve in this section is that the five nearest samples are from the same class based on the average opinion of all the test subjects.
+In the second part of the project, a similarity study was conducted and 32 different subjects gave labeling based on their interpretation of 78 samples taken from the complete database. This time the labeling is affected by the psychological way each person hear the sound. The similarity between two samples is not only based on the true nature of the sound but also on how each subject interpret the sound.\\ What we are searching to achieve in this section is that the five nearest samples are from the same class based on the average opinion of all the test subjects.
 
-\section{How we adressed the problem}
+\section{How we addressed the problem}
 In both cases, we have to identify the space in which we are trying to classify our data and proceed to proper feature extraction. We have two ways of looking at the feature extraction problem : perceptual or taxonomic \cite{P03}. The perceptual approach is motivated by the biological aspect of the problem, and it aims to explain how we hear the sound by finding a space where the descriptors axis explains the notion of timbre. We will not enter into details in this aspect, rather we will consider the taxonomic approach, in which the best feature space is the one that helps in getting the most discrimination between classes.\par
-A state of the art study was done on the subject of features extraction for audio samples. Based on that study, I will be considering two space representation; the first one is the MFCC and the other is the scattering \cite{AM11}. In both cases we will try to get the highest precision based on the Mean-Average-Precision and Precision-At-5 using techniques of data treatment and metric learning. 
+A state of the art study was done on the subject of features extraction for audio samples. Based on that study, I will be considering two space representations; the first one is the MFCC and the other is the scattering \cite{AM11}. In both cases we will try to get the highest precision based on the Mean-Average-Precision and Precision-At-5 using techniques of data treatment and metric learning. 
 
 \section{The ranking metrics.}
 \subsection{Computing the distances.}
-To evaluate the performance of each space, we compute the pair wise euclidean distances between each two instrument samples in that space. For n number of files we will obtain an n*n symmetric matrix of distances. The 5 smaller distances to each file  will be extracted. we will thus have for each file 5 other suggestions. This method is usually used to evaluate search engine. Thus our problem can be looked at as being a search engine based on instrument. A success would be to give 5 suggestions that are from the same class(same instrument or same technique of play).
+To evaluate the performance of each space, we compute the pair wise euclidean distance between each two instrument samples in that space. For n number of files we will obtain an n*n symmetric matrix of distances. The 5 smaller distances to each file  will be extracted. we will thus have for each file 5 other suggestions. This method is usually used to evaluate search engine. Thus our problem can be looked at as being a search engine based on instrument. A success would be to give 5 suggestions that are from the same class (same instrument or same technique).
 \subsection{The mean average precision.}
-The mean average precision is a single evaluation number of the whole search system performance. This is the most used number in the domain of search systems. In the mean average precision, the mean stands for averaging on the entire different queries results. The average precision or AP stands for the average precision of each query result alone. In brief, we compute for each query, the average precision and then average on the entire query space. Now we have to define the average precision.
+The mean average precision \ml{(MAP), use acronym once introduced} is a single evaluation number of the whole search system performance. This is the most used number in the domain of search systems. In the mean average precision, the mean stands for averaging on the entire different queries results. The average precision or AP stands for the average precision of each query result alone. In brief, we compute for each query, the average precision and then average on the entire query space. Now we have to define the average precision.
 \subsubsection{Average precision}
-To better understand the average precision we will consider an example generated using matlab in fig 1.3. Let us take the five nearest samples to the yellow sample inside the square. And let us denote By 1 if the other sample is in the same class and 0 if not. the five nearest samples would be evaluated as [1 0 0 1 1]. The precision of each sample is given by the following equation : $$precision=\frac{relevant\  retrieved}{retrieved}$$. The precision of the samples would thus be equal to : $$[1/1 \  1/2 \ 1/3\  2/4\  3/5]=[1 \ 0.5 \   0.33 \ 0.5 \ 0.6]$$\\ the average precision would then be equal to the sum of those samples divided by the number of samples.$$AP=\frac{1+0.5+0.33+0.5+0.6}{5}=0.586$$
+To better understand the average precision we will consider an example \ml{remove: generated using matlab} in fig 1.3 \ml{use ref \ref{fig:toto}}. Let us take the five nearest samples to the yellow sample inside the square. And let us denote By 1 if the other sample is in the same class and 0 if not. the five nearest samples would be evaluated as [1 0 0 1 1]. The precision of each sample is given by the following equation : $$precision=\frac{relevant\  retrieved}{retrieved}$$. The precision of the samples would thus be equal to : $$[1/1 \  1/2 \ 1/3\  2/4\  3/5]=[1 \ 0.5 \   0.33 \ 0.5 \ 0.6]$$\\ the average precision would then be equal to the sum of those samples divided by the number of samples.$$AP=\frac{1+0.5+0.33+0.5+0.6}{5}=0.586$$
 \begin{figure}[t!]
   
   \centering
 	    \includegraphics[width=1\textwidth]{fig1.jpg}
     \caption{example generated using matlab to demonstrate the average precision}
+    \label{fig:toto}
 \end{figure}
 The same computation will be done for all the samples in the space. and at the end we sum all the AP and divide them by the number of samples to obtain the mean average precision. As we can see the mean average precision put more weight on having the first result as a relevant sample(same class) than the second result and so on.
 \subsection{The precision at k}
