@@ -1,5 +1,5 @@
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}CNSMDP and Project TICEL.}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}CNSMDP and TICEL Project}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}The SOL database.}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Human interpretation and timber.}{2}{section.1.3}
 \contentsline {subsection}{\numberline {1.3.1}The mechanics of hearing.}{3}{subsection.1.3.1}
@@ -7,10 +7,10 @@
 \contentsline {section}{\numberline {1.4}What do we know about timbre ?}{4}{section.1.4}
 \contentsline {section}{\numberline {1.5}Defining the problem.}{5}{section.1.5}
 \contentsline {subsection}{\numberline {1.5.1}True labeling problem.}{5}{subsection.1.5.1}
-\contentsline {subsection}{\numberline {1.5.2}Ground truth labeling.}{5}{subsection.1.5.2}
-\contentsline {section}{\numberline {1.6}How we adressed the problem}{6}{section.1.6}
+\contentsline {subsection}{\numberline {1.5.2}Ground truth labeling.}{6}{subsection.1.5.2}
+\contentsline {section}{\numberline {1.6}How we addressed the problem}{6}{section.1.6}
 \contentsline {section}{\numberline {1.7}The ranking metrics.}{6}{section.1.7}
 \contentsline {subsection}{\numberline {1.7.1}Computing the distances.}{6}{subsection.1.7.1}
-\contentsline {subsection}{\numberline {1.7.2}The mean average precision.}{6}{subsection.1.7.2}
+\contentsline {subsection}{\numberline {1.7.2}The mean average precision.}{7}{subsection.1.7.2}
 \contentsline {subsubsection}{Average precision}{7}{section*.3}
-\contentsline {subsection}{\numberline {1.7.3}The precision at k}{8}{subsection.1.7.3}
+\contentsline {subsection}{\numberline {1.7.3}The precision at k}{7}{subsection.1.7.3}
